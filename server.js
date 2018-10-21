@@ -58,6 +58,12 @@ app.get("/bad", (req, res) => {
   });
 });
 
+app.get("/projects", (req, res) => {
+  res.render("projects.hbs", {
+    pageTitle: "My Projects"
+  });
+});
+
 // Bind application to a port on the machine. 3000
 // common port for developing locally
 app.listen(port, () => {
